@@ -4,7 +4,7 @@ Phytovision is a Fruit and Vegetable image classification model built on ResNet1
 
 The model was further trained on a fruit and vegetable dataset from Kaggle, you can find the dataset at: https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition/
 
-The model has been tested with confusion matrixes, accuracy per class and manual testing on images from the internet.
+The model has been tested with a confusion matrix, accuracy per class and manual testing on images from the internet.
 
 Finally, the model was deployed to a front-end website for anyone to access and classify images, you can find the front-end at: https://phytovisionv2.streamlit.app
 
