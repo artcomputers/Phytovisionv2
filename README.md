@@ -11,4 +11,5 @@ The model was then deployed to a front-end website for anyone to access and clas
 Two of the most essential resources in the development of the project include PyTorch documentation and Streamlit documentation.
 
 The PyTorch documentation was very useful in the production of the back-end, this can be found at: https://docs.pytorch.org/docs/stable/index.html
+
 The Streamlit documentation was very useful in the production of the front-end, this can be found at: https://docs.streamlit.io/
