@@ -2,6 +2,7 @@ import streamlit as st
 import torch
 import torchvision.transforms as transforms
 import torchvision.models as models
+from torchvision.models import resnet18, ResNet18_Weights
 from PIL import Image
 import json
 
@@ -11,7 +12,7 @@ with open("class_names.json", "r") as f:
 
 # Load trained model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = models.resnet18(pretrained=False)
+model = resnet18(weights=ResNet18_Weights.IMAGENET1K_V1)
 model.fc = torch.nn.Linear(model.fc.in_features, len(class_names))
 model.load_state_dict(torch.load("PhytovisionModel.pth", map_location=device))
 model.to(device)
